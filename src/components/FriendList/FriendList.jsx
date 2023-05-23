@@ -11,8 +11,25 @@ const FriendList = ({ friends }) => {
     <FriendsList>
       {friends.map(({ id, isOnline, avatar, name }) => (
         <FriendListItem key={id}>
-              
-              {isOnline ? <FriendStatus style={{ backgroundColor: "green", width:"25px",height:"25px",borderRadius:"50%"}}></FriendStatus> : <FriendStatus style={{ backgroundColor: "red", width:"25px",height:"25px",borderRadius:"50%"}}></FriendStatus>}
+          {isOnline ? (
+            <FriendStatus
+              style={{
+                backgroundColor: 'green',
+                width: '25px',
+                height: '25px',
+                borderRadius: '50%',
+              }}
+            ></FriendStatus>
+          ) : (
+            <FriendStatus
+              style={{
+                backgroundColor: 'red',
+                width: '25px',
+                height: '25px',
+                borderRadius: '50%',
+              }}
+            ></FriendStatus>
+          )}
           <FriendAvatar src={avatar} alt="User avatar" width="48" />
           <FriendName>{name}</FriendName>
         </FriendListItem>
