@@ -1,0 +1,31 @@
+.tableItem {
+  display: flex;
+  font-size: 30px;
+  justify-content: center;
+  background-color: lightcyan;
+}
+.tableBody {
+  display: flex;
+  flex-direction: column;
+}
+.transactionHistory {
+  display: flex;
+  flex-direction: column;
+}
+.tableHead {
+  display: flex;
+  justify-content: center;
+  background-color: lightcoral;
+  color: aliceblue;
+  font-size: 30px;
+}
+.tableTd {
+  border: 1px solid black;
+  width: 150px;
+  text-align: center;
+  padding: 10px 0;
+}
+.tableHead th {
+  width: 150px;
+  padding: 10px 0;
+}
